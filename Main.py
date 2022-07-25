@@ -5,7 +5,7 @@ class Stack:
         items: It is the stack
         size: It holds the size of the stack"""
     
-    def _init_(self, size):
+    def __init__(self, size):
         
         self.items = []
         self.size = size
