@@ -1,7 +1,7 @@
 import os
 class Stack:
-    """this class contains the stack and its size
-    attributes:
+    """This class contains the stack and its size
+    Attributes:
     items: it is the stack
     size: it holds the size of the stack"""
     
@@ -10,27 +10,27 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-        """the is_empty() function returns if the stack is empty"""
+        """The is_empty() function returns if the stack is empty"""
         return len(self.items)==0
             
     def is_full(self):
-        """the is_full() function returns if the stack is full"""
+        """The is_full() function returns if the stack is full"""
         return len(self.items)==self.size
             
     def push(self, data):
-        """the push function pushes or adds the data to the stack
-        arguments:
+        """The push function pushes or adds the data to the stack
+        Arguments:
         data: it holds the value to be added to the stack"""
         if not self.is_full():
             self.items.append(data)
 
     def pop(self):
-        """the pop function pops or delets the top most data from the stack"""
+        """The pop function pops or delets the top most data from the stack"""
         if not self.is_empty():
            self.items.pop(-1)
 
     def status(self):
-    """the status function pops or deletes the top most data from the stack"""
+    """The status function displays the elements of the stack"""
        for element in self.items:
         print(element)
 
