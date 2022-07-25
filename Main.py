@@ -5,7 +5,6 @@ class Stack:
         self.size = size
 
     def is_empty(self):
-        # Write code here
         return len(self.items)==0
 
     def is_full(self):
@@ -21,7 +20,7 @@ class Stack:
 
     def status(self):
        for element in self.items:
-        print(elements)
+        print(element)
 
 # Do not change the following code
 size, queries = map(int, input().rstrip().split())
